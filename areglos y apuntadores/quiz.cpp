@@ -50,13 +50,16 @@ int main(){
 //de buscaminas y mostrar cuantas minas hay (lo determina el usuario)
 
 int main(){
-    char m;
-    string busca_minas[m];
+    int m;
     cout<< "ingrese si hay mina o no (s/n): ";
     cin>>m;
+    int busca_minas[m];
 
     for (int j=0; j<m; j++){
-
-        cout<<"la cantidad de minas es: "
+        if(busca_minas[j] == 1){
+            int count = busca_minas[j++];
+        }else{
+            cout<<"no hay busca minas";
+        }
     }
 }
