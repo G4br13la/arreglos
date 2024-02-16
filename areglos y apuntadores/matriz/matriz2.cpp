@@ -2,7 +2,6 @@
 #include <iostream>
 #include <string> //para capturar y mostrar informacion al usuario
 using namespace std;
-//1) realizar una calvuladora de matriz 3x5
 
 int main(){
     int c;
@@ -16,9 +15,18 @@ int main(){
 
     for(int i=0; i<c;i++){
         for(int j=0; j<f; j++){
-            cout<<"¿que productos quiere?"<<f,c;
-            
+            cout<<"¿que productos quiere?";
+            cin>>maquina_dulces[f][c];
+
         }
     }
+
+    for(int i=0; i<c;i++){
+        for(int j=0; j<f; j++){
+            cout<<maquina_dulces[f][c];
+        }
+        cout<< endl;
+    }
+    reurn 0
 
 }
