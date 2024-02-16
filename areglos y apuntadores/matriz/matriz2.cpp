@@ -11,22 +11,22 @@ int main(){
     cout<<"¿cuantas columnas quiere?"<< endl;
     cin>> c;
 
-    char maquina_dulces[f][c];
+    string maquina_dulces[f][c];
 
-    for(int i=0; i<c;i++){
-        for(int j=0; j<f; j++){
+    for(int i=0; i<f;i++){
+        for(int j=0; j<c; j++){
             cout<<"¿que productos quiere?";
-            cin>>maquina_dulces[f][c];
+            cin>>maquina_dulces[i][j];
 
         }
     }
 
-    for(int i=0; i<c;i++){
-        for(int j=0; j<f; j++){
-            cout<<maquina_dulces[f][c];
+    for(int i=0; i<f;i++){
+        for(int j=0; j<c; j++){
+            cout<<maquina_dulces[i][j];
         }
         cout<< endl;
     }
-    reurn 0
+    return 0;
 
 }
